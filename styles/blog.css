@@ -25,3 +25,10 @@ p,
 ul {
     font-size: 20pt;
 }
+
+footer {
+    font-family: 'Glory', sans-serif;
+    background-color: thistle;
+    width: 100%;
+    text-align: center;
+}

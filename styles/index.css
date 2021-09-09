@@ -58,5 +58,20 @@ p {
 
 ul {
     font-family: 'Glory', sans-serif;
+    font-size: 30pt;
     font-weight: 200;
+}
+
+footer {
+    font-family: 'Glory', sans-serif;
+    background-color: thistle;
+    width: 100%;
+    text-align: center;
+}
+
+#footer-link {
+    font-family: 'Glory', sans-serif;
+    background-color: thistle;
+    width: 100%;
+    text-align: center;
 }

@@ -1,0 +1,45 @@
+body {
+    background-color: lavenderblush;
+    text-align: center;
+    font-family: 'Amatic SC', cursive;
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h1 {
+    font-size: 80pt;
+    background-color: thistle;
+    margin-bottom: 0;
+}
+
+h2 {
+    font-size: 50pt;
+}
+
+h3 {
+    font-size: 30pt;
+}
+
+p {
+    font-size: 25pt;
+}
+
+.blog-block {
+    display: inline;
+}
+
+.about-me {
+    max-width: 960px;
+}
+
+.box-header {
+    font-style: italic;
+}
+
+.header {
+    width: 100%;
+}

@@ -1,7 +1,8 @@
 body {
     background-color: lavenderblush;
     text-align: center;
-    font-family: 'Amatic SC', cursive;
+    font-family: 'Glory', sans-serif;
+    font-weight: 200;
 }
 
 .main {
@@ -10,10 +11,21 @@ body {
     align-items: center;
 }
 
+h1,
+h2,
+h3,
+h4,
+h5 {
+    font-family: 'Amatic SC', cursive;
+    font-weight: 700;
+}
+
 h1 {
     font-size: 80pt;
     background-color: thistle;
     margin-bottom: 0;
+    font-family: 'Amatic SC', cursive;
+    font-weight: 700;
 }
 
 h2 {
@@ -42,4 +54,9 @@ p {
 
 .header {
     width: 100%;
+}
+
+ul {
+    font-family: 'Glory', sans-serif;
+    font-weight: 200;
 }

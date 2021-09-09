@@ -1,3 +1,16 @@
+/*============
+table of contents
+1.global styles
+2.layout
+3.typography
+4.classes
+===============*/
+
+
+/*==============
+1.global styles
+===============*/
+
 body {
     background-color: lavenderblush;
     text-align: center;
@@ -5,11 +18,28 @@ body {
     font-weight: 200;
 }
 
-.main {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+
+/*==============
+2.layout
+===============*/
+
+ul {
+    font-family: 'Glory', sans-serif;
+    font-size: 30pt;
+    font-weight: 200;
 }
+
+footer {
+    font-family: 'Glory', sans-serif;
+    background-color: thistle;
+    width: 100%;
+    text-align: center;
+}
+
+
+/*==============
+3.typography
+===============*/
 
 h1,
 h2,
@@ -40,31 +70,29 @@ p {
     font-size: 25pt;
 }
 
-.blog-block {
-    display: inline;
-}
 
-.about-me {
-    max-width: 960px;
-}
+/*==============
+4. classes
+===============*/
 
-.box-header {
-    font-style: italic;
+.main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .header {
     width: 100%;
 }
 
-ul {
-    font-family: 'Glory', sans-serif;
-    font-size: 30pt;
-    font-weight: 200;
+.box-header {
+    font-style: italic;
 }
 
-footer {
-    font-family: 'Glory', sans-serif;
-    background-color: thistle;
-    width: 100%;
-    text-align: center;
+.blog-block {
+    display: inline;
+}
+
+.about-me {
+    max-width: 960px;
 }

@@ -1,8 +1,37 @@
+/*============
+table of contents
+1.global styles
+2.layout
+3.typography
+===============*/
+
+
+/*==============
+1.global styles
+===============*/
+
 body {
     background-color: lavenderblush;
     font-family: 'Glory', sans-serif;
     font-weight: 200;
 }
+
+
+/*==============
+2.layout
+===============*/
+
+footer {
+    font-family: 'Glory', sans-serif;
+    background-color: thistle;
+    width: 100%;
+    text-align: center;
+}
+
+
+/*==============
+3.typography
+===============*/
 
 h1 {
     font-size: 80pt;
@@ -24,11 +53,4 @@ h3 {
 p,
 ul {
     font-size: 20pt;
-}
-
-footer {
-    font-family: 'Glory', sans-serif;
-    background-color: thistle;
-    width: 100%;
-    text-align: center;
 }

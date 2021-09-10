@@ -1,7 +1,7 @@
 /*============
 table of contents
 1.global styles
-2.layout
+2.sections
 3.typography
 ===============*/
 
@@ -18,7 +18,7 @@ body {
 
 
 /*==============
-2.layout
+2. sections
 ===============*/
 
 header {
@@ -67,7 +67,22 @@ h3 {
     font-size: 25pt;
 }
 
+h4 {
+    font-size: 20pt;
+}
+
 p,
 ul {
     font-size: 20pt;
+}
+
+#commitment-statement {
+    font-size: 30pt;
+    font-family: 'Amatic SC', cursive;
+}
+
+#disclaimer {
+    font-size: 30pt;
+    color: darkred;
+    text-align: center;
 }

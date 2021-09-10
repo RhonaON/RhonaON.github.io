@@ -21,11 +21,28 @@ body {
 2.layout
 ===============*/
 
+header {
+    font-family: 'Glory', sans-serif;
+    font-size: 25pt;
+    background-color: thistle;
+    width: 100%;
+    text-align: center;
+}
+
+.box-div {
+    display: flex;
+    justify-content: space-evenly;
+}
+
 footer {
     font-family: 'Glory', sans-serif;
     background-color: thistle;
     width: 100%;
     text-align: center;
+}
+
+.magic-box {
+    background-color: moccasin;
 }
 
 

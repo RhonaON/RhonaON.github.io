@@ -1,7 +1,7 @@
 /*============
 table of contents
 1.global styles
-2.sections
+2.styling
 3.typography
 ===============*/
 
@@ -18,7 +18,7 @@ body {
 
 
 /*==============
-2. sections
+2. styling
 ===============*/
 
 header {
@@ -34,15 +34,22 @@ header {
     justify-content: space-evenly;
 }
 
+.magic-box {
+    background-color: moccasin;
+}
+
+#one-of-a-kind-box {
+    background-color: powderblue;
+    color: darkgreen;
+    font-style: italic;
+    font-family: fantasy;
+}
+
 footer {
     font-family: 'Glory', sans-serif;
     background-color: thistle;
     width: 100%;
     text-align: center;
-}
-
-.magic-box {
-    background-color: moccasin;
 }
 
 
@@ -72,7 +79,8 @@ h4 {
 }
 
 p,
-ul {
+ul,
+ol {
     font-size: 20pt;
 }
 

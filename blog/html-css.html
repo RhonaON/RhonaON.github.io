@@ -14,31 +14,44 @@
 </head>
 
 <body>
+    <section>
 
-    <h1>Classes vs. ids - best practices</h1>
+        <h1>Classes vs. ids - best practices</h1>
 
-    <header>
-        <a href="../index.html">Back to homepage</a>
-    </header>
-    <div>
-        <p>As someone completely new to the world of HTML and CSS, there are a LOT of new concepts to grasp from the get go. Some make sense right away, and some I just can't seem to wrap my head around.</p>
-        <p> Truly understanding the difference between class and id attributes took me longer than I would care to admit.</p>
+        <header>
+            <a href="../index.html">Back to homepage</a>
+        </header>
+        <div>
+            <h3> What are classes and ids?</h3>
 
-        <p>The penny finally dropped - when I thought <strong>inside</strong> the box.</p>
+            <p>
+                Classes and IDs are two of the most commonly used selectors for styling targeted HTML elements with CSS. Selectors are essentially used to point to different parts (elements) of your HTML document that you want CSS to style in a particular way.
+            </p>
+            <p>
+                You could be forgiven for thinking that classes and ids can be used interchangeably and produce the same outcome. This is true to an extent, especially when working with just CSS. However the correct use of the two selectors is very important once you
+                start working with a functional programming language such as JavaScript, not to mention the fact that there are a lot of opinions in the tech community around best practices for their use.
+            </p>
 
-        <p>First off:</p>
+            <p> Truly understanding the difference between class and id attributes took me longer than I would care to admit.</p>
 
-    </div>
+            <p>The penny finally dropped - when I thought <strong>inside</strong> the box.</p>
+
+
+        </div>
+    </section>
 
     <section>
+
+        <h3>Using a class selector to style two identical boxes</h3>
+
         <div class="box-div">
             <div class="magic-box">
                 <h3>What is a class?</h3>
                 <p>
                     <ul>
                         <li>global attribute</li>
-                        <li>bla bla bla</li>
-                        <li>bla bla bla</li>
+                        <li>multiple HTML elements can share the same class</li>
+                        <li>class selector preceeded by a period (.)</li>
                     </ul>
                 </p>
 
@@ -50,15 +63,107 @@
                     <ul>
                         <li>global attribute</li>
                         <li>defines a <em>unique</em> identifier</li>
-                        <li>uses a fragment identifier - the # symbol</li>
+                        <li>id selector preceeded by the # symbol</li>
+                    </ul>
+                </p>
+            </div>
+
+        </div>
+
+        <h4>Lets look at the code I used to make these boxes</h4>
+
+        <div class="box-div">
+
+            <div>
+                <h4>Defining "box-div" and "magic-box" class in HTML</h4>
+                <img src="HTML-class-box.png" alt="screenshot of HTML code used for box class" title="HTML screenshot for magic box class">
+
+            </div>
+
+            <div>
+                <h4>Styling "box-div" and "magic-box" class in CSS</h4>
+                <img src="css-box.png" alt="screenshot of CSS code used for box class" title="CSS screenshot for magic box class"> </div>
+
+        </div>
+
+        <p> Here you can see that I defined a class "box-div" as I wanted any boxes I used in this blog post to be evenly spaced across the page.</p>
+        <p>I also defined a "magic-box" class (to reflect the wonder and awe I felt when I finally grasped this concept). A class selector could contain any amount of styling choices such as font style and size, background color, positioning etc.</p>
+        <p>In this case the only styling I wanted for my magic boxes was a delightful moccasin background. </p>
+
+
+
+
+    </section>
+
+    <section>
+
+        <p> Now let's say, hypothetically, I wanted to create a box SO unique and SO magnificent, that I never wanted it to be replicated again, even by myself, even on my own webpage.....hypothetically....</p>
+        </p>
+        <h3>Using an id selector in this very hypothetical situation</h3>
+        <div class="box-div">
+            <div class="magic-box">
+                <h3>What is a class?</h3>
+                <p>
+                    <ul>
+                        <li>global attribute</li>
+                        <li>multiple HTML elements can share the same class</li>
+                        <li>class selector preceeded by a period (.)</li>
+                    </ul>
+                </p>
+
+            </div>
+
+            <div class="magic-box" id="one-of-a-kind-box">
+                <h3>What is an id?</h3>
+                <p>
+                    <ul>
+                        <li>global attribute</li>
+                        <li>defines a <em>unique</em> identifier</li>
+                        <li>id selector preceeded by the # symbol</li>
                     </ul>
                 </p>
             </div>
 
 
         </div>
-        <p>And what is the difference between the two?</p>
+
+        <h4>Now lets look at the code I used to change the styling of the id box to make it as unique and as one of a kind as the necklace that old lady threw in to the ocean at the end of the Titanic movie....</h4>
+
+
+
+        <div class="box-div">
+
+            <div>
+                <h4>Assigning a unique id selector to the 'one of a kind box' in HTML</h4>
+                <img src="one-of-a-kind-box-HTML.png" alt="screenshot of HTML code used for 'one-of-a-kind-box'" " title="HTML screenshot for 'one-of-a-kind-box">
+
+            </div>
+
+            <div>
+                <h4>Styling the 'one of a kind box ' in CSS</h4>
+                <img src="one-of-a-kind-box-CSS.png" alt="screenshot of CSS code used for 'one-of-a-kind-box '" title="CSS screenshot for 'one-of-a-kind-box '"> </div>
+
+        </div>
+
+
+        <!--
+        
+This shows us two things about ids:
+
+1.
+2. An id will override a class, because an id is more specific than a class, and browsers allow more specific selectors to override less specific selectors.
+
+-->
+
+        </div>
+
     </section>
+
+    <footer>
+
+        <h3><a href="https://github.com/RhonaON">Visit my github</a>
+        </h3>
+    </footer>
 </body>
 
 </html>

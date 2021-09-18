@@ -33,8 +33,8 @@
     <h3>The difference between HTML and CSS</h3>
 
     <p><strong>What is HTML?</strong></p>
-    <p>HTML or Hyper Text Markup Language is the basic buidling block of any webpage. A markup language refers to a set of mark up tags, in this case HTML tags, to describe web pages. HTML documents essentially describe web pages. A webpage structure consists
-        of HTML tags and plain text. HTML tags are easily identified as they are surrounded by angle brackets ( eg. &lt;p&gt; to represent paragraph or &lt;div&gt; to represent a division in the page ).</p>
+    <p>HTML or Hyper Text Markup Language is the basic buidling block of any webpage. A markup language refers to a set of mark up tags, in this case HTML tags, to describe web pages. A webpage structure consists of HTML tags and plain text. HTML tags are
+        easily identified as they are surrounded by angle brackets ( eg. &lt;p&gt; to represent paragraph or &lt;div&gt; to represent a division in the page ).</p>
 
     <img src="blog/html-tag.png" alt="HTML tags" title="HTML tags" width="500x">
 
@@ -78,7 +78,7 @@
         a number of options, and in doing so changing the outcome of the story (of course you could always read it again and select another option!!).</p>
 
     <p>A common tool of control flow in JS are if/else statements. With an if/else statement, the program will execute if the condition returns true, otherwise if its false it will carry out another action. For example in our Goosebumps book we peak through
-        the window of the dilapidated mansion to check for any obvious signs of ghosty activity(true = safe, false = ghosty AF); if it's all clear(true) we may go inside and out of the storm, if it looks suspicious(false) we may return to the dark haunted
+        the window of the dilapidated mansion to check for any obvious signs of ghosty activity(true = safe, false = ghosty AF); if it looks safe(true) we may go inside and out of the storm, if it looks ghosty AF(false) we may return to the dark haunted
         forest...OOOOOOOHHHHHH.
     </p>
 
@@ -91,7 +91,8 @@
         for, while, and do…while.
     </p>
 
-    <p>So the dark haunted forest isn't actually the best place to wait out the storm on this long dark haunted night, maybe you return to the mansion at regular intervals until the coast is clear.</p>
+    <p>So the dark haunted forest isn't actually the best place to wait out the storm on this long dark haunted night, maybe you return to the mansion at regular intervals until the coast is clear. In other words, while the house is ghosty AF(false), keep
+        returning every hour until safe(true), then enter!</p>
 
     <h3>The DOM</h3>
 
@@ -103,8 +104,8 @@
     <img src="blog/DOM.png" alt="DOM tree" title="DOM tree" width="500x">
 
     <p>
-        A web page can be either displayed in the browser window or as the HTML source in the DOM. In both cases, it is the same document, however the DOM representation allows it to be manipulated. As an object-oriented representation of the web page, its structure,
-        content and style can be modified. The DOM is crucial in tying HTML, CSS and JS together. In fact, without the DOM, JS wouldn't have any model or notion of web pages and their component parts.
+        A web page can be either displayed in the browser window or as the HTML source in the DOM. In both cases, it is the same document, however the DOM representation allows its structure, content and style to be manipulated. The DOM is crucial in tying HTML,
+        CSS and JS together. In fact, without the DOM, JS wouldn't have any model or notion of web pages and their component parts.
     </p>
 
     <p>
@@ -112,10 +113,24 @@
         and CSS, and write JS.
     </p>
 
+    <p><strong>DOMception - the DOM within my blog about the DOM</strong></p>
+
+    <img src="blog/my own DOM.png" alt="DOM for my blog" title="DOM for my blog" width="1000x">
+
     <h3>Accessing data from arrays and objects</h3>
 
     <p>
-        Both arrays and objects are special data types in JavaScript that can be used to store a collection of data.
+        Both arrays and objects are special data types in JavaScript that can be used to store a collection of data. </p>
+
+    <p><strong>Objects</strong></p>
+    <p>
+        Objects are data structures that are used to represent a ‘Thing’. This could be anything like a person, plants, contents of your cupboard...really anything! An object stores data in 'key value pairs'. A good analogy for an object is that of a dictionary
+        - you search the word or <strong>key</strong> and it gives you the definition or <strong>value</strong>. We generally give a key a word or a number label, whereas the value can be a string, a number, a boolean or even an array!
+    </p>
+
+    <p><strong>Arrays</strong></p>
+    <p>An array is a high-level, list-like object. It contains a list of different values stored in a single variable. These values can be numbers, strings, objects, or arrays (wooaahh). The major difference between objects and arrays is that is that arrays
+        store the data in an ordered collection in which the data can be accessed using a numerical index, as opposed to searching by the 'key'.
 
 
     </p>
@@ -123,13 +138,18 @@
     <h3>Functions</h3>
     <p>
         Functions are one of the fundamental building blocks in JavaScript. A function is a special object that is essentially a set of statements that performs a task or calculates a value. Functions are useful as they are 'defined' or created once and can be
-        'called' or used again and again within the same program.
+        'called' or used again and again within the same program. In basic terms, a function is like a box with some code inside that will perform a specific task for us. Once we have created this function and assigned it a name, we can call on it and
+        use it again and again.
     </p>
 
     <img src="blog/function.png" alt="Function syntax" title="Function syntax" width="500x">
 
     <p>
-        A function uses specific syntax. First of all you 'declare' a function by using the <strong>'function'</strong> keyword, then you must give the function a name
+        A function uses specific syntax. First of all you 'declare' a function by using the <strong>'function'</strong> keyword, then you must give the function a name. The parentheses contain the function parameters (listed in the function definition.),
+        think of them as placeholders for the actual values you want to pass in to the fuction. These actual values are called arguments. The function statement is contained within the body of the function. By default, functions return undefined. To return
+        an actual value, you must provide the function a return statement that specifies the value to return.
+
+
     </p>
     <section>
 

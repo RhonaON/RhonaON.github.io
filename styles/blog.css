@@ -94,3 +94,8 @@ ol {
     color: darkred;
     text-align: center;
 }
+
+#reflections {
+    font-size: 40pt;
+    font-family: 'Amatic SC', cursive;
+}

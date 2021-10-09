@@ -1,7 +1,7 @@
 /*
 
 TODO:
-- [ ] single textbox output
+- [x] single textbox output
 - [ ] three textbox output
 - [ ] use BEM methodology for css
 - [ ] animate pin wheels
@@ -18,7 +18,14 @@ var pinwheel2 = document.getElementById("pinwheel2")
 
 var displayBoxElement = document.getElementById("display-box")
 
+var theoryBeginningElement = document.getElementById("theory-beginning")
+var theoryMiddleElement = document.getElementById("theory-middle")
+var theoryEndElement = document.getElementById("theory-end")
+
+
 //Function to randomly generate beginning, middle and end of theory
+
+
 function getRandomArbitrary(min, max) {
     min = Math.ceil(min);
     max = Math.floor(max);
@@ -47,7 +54,55 @@ function generateTheory() {
 }
 
 function displayTheory() {
-    var theory = generateTheory()
-    displayBoxElement.textContent = theory
+    resetTheoryBeginning()
+    resetTheoryMiddle()
+    resetTheoryEnd()
 
+
+    displayTheoryBeginning()
+    setTimeout(displayTheoryMiddle, 3000)
+    setTimeout(displayTheoryEnd, 6000)
+}
+
+function generateTheoryBeginning() {
+    return beginning[getRandomArbitrary(0, beginning.length)]
+
+}
+
+function generateTheoryMiddle() {
+    return middle[getRandomArbitrary(0, middle.length)]
+}
+
+function generateTheoryEnd() {
+    return end[getRandomArbitrary(0, end.length)]
+}
+
+
+function displayTheoryBeginning() {
+    var theoryBeginning = generateTheoryBeginning()
+    theoryBeginningElement.textContent = theoryBeginning
+}
+
+function displayTheoryMiddle() {
+    var theoryMiddle = generateTheoryMiddle()
+    theoryMiddleElement.textContent = theoryMiddle
+
+}
+
+function displayTheoryEnd() {
+    var theoryEnd = generateTheoryEnd()
+    theoryEndElement.textContent = theoryEnd
+}
+
+function resetTheoryBeginning() {
+    theoryBeginningElement.textContent = ''
+}
+
+function resetTheoryMiddle() {
+    theoryMiddleElement.textContent = ''
+
+}
+
+function resetTheoryEnd() {
+    theoryEndElement.textContent = ''
 }

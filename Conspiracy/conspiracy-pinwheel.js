@@ -2,7 +2,7 @@
 
 TODO:
 - [x] single textbox output
-- [ ] three textbox output
+- [x] three textbox output
 - [ ] use BEM methodology for css
 - [ ] animate pin wheels
 - [ ] responsive styles on mobile
@@ -11,12 +11,13 @@ TODO:
 
 
 //Each pinwheel image is it's own var for later CSS/JS animation
+
 var pinwheel0 = document.getElementById("pinwheel0")
 var pinwheel1 = document.getElementById("pinwheel1")
 var pinwheel2 = document.getElementById("pinwheel2")
 
 
-var displayBoxElement = document.getElementById("display-box")
+//Get each pinwheel from HTML doc
 
 var theoryBeginningElement = document.getElementById("theory-beginning")
 var theoryMiddleElement = document.getElementById("theory-middle")
@@ -24,7 +25,6 @@ var theoryEndElement = document.getElementById("theory-end")
 
 
 //Function to randomly generate beginning, middle and end of theory
-
 
 function getRandomArbitrary(min, max) {
     min = Math.ceil(min);
@@ -47,12 +47,6 @@ let end = ["babies", " with live laugh love propaganda", "with the bisexual agen
 //*Should also display the theory as a text output
 
 
-function generateTheory() {
-    var theory = `${beginning[getRandomArbitrary(0, beginning.length)]} ${middle[getRandomArbitrary(0, middle.length)]} ${end[getRandomArbitrary(0, end.length)]}`
-    console.log(theory)
-    return theory
-}
-
 function displayTheory() {
     resetTheoryBeginning()
     resetTheoryMiddle()
@@ -60,9 +54,11 @@ function displayTheory() {
 
 
     displayTheoryBeginning()
-    setTimeout(displayTheoryMiddle, 3000)
-    setTimeout(displayTheoryEnd, 6000)
+    setTimeout(displayTheoryMiddle, 2000)
+    setTimeout(displayTheoryEnd, 4000)
 }
+
+//Functions to generate beginning middle and end of theory
 
 function generateTheoryBeginning() {
     return beginning[getRandomArbitrary(0, beginning.length)]
@@ -77,6 +73,7 @@ function generateTheoryEnd() {
     return end[getRandomArbitrary(0, end.length)]
 }
 
+//functions to display beginning middle and end
 
 function displayTheoryBeginning() {
     var theoryBeginning = generateTheoryBeginning()
@@ -93,6 +90,8 @@ function displayTheoryEnd() {
     var theoryEnd = generateTheoryEnd()
     theoryEndElement.textContent = theoryEnd
 }
+
+//Functions to reset beginning middle and end
 
 function resetTheoryBeginning() {
     theoryBeginningElement.textContent = ''

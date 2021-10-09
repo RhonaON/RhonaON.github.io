@@ -1,41 +1,86 @@
-    body {
-        font-family: 'Courier New', Courier, monospace, cursive;
-        background-color: forestgreen;
-        justify-content: center;
-        align-content: center;
+.main {
+    font-family: 'Courier New', Courier, monospace, cursive;
+    background-color: forestgreen;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+.header {}
+
+.header__title {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    font-weight: bold;
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+.pinwheels {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.pinwheels__pinwheel {
+    width: 25%
+}
+
+.conspiracy {
+    margin-bottom: 2rem;
+    display: flex;
+    flex-direction: row;
+}
+
+.conspiracy__theory {
+    width: 33.33%;
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+.spinner {}
+
+.spinner__button {
+    background-color: darkred;
+    color: white;
+    margin: 0 auto;
+    border: none;
+    cursor: pointer;
+    border-radius: 14px;
+    display: block;
+    position: middle;
+    font-family: monospace;
+}
+
+
+/* small screens */
+
+@media screen and (max-width: 48em) {
+    .header__title {
+        font-size: 1.5rem;
     }
-    
-    h1 {
-        margin-top: 100px;
-        margin-bottom: 50px;
-        font-size: 3em;
-        text-align: center;
+    .conspiracy__theory {
+        font-size: 1.5rem;
     }
-    
-    table {
-        margin-right: center;
-        margin-left: center;
-        margin: 0 auto;
+    .spinner__button {
+        font-size: 1.5rem;
+        width: 6rem;
+        height: 3rem;
     }
-    
-    .container {}
-    
-    .spin-button {
-        background-color: darkred;
-        color: white;
-        padding: 16px 25px;
-        margin: 0 auto;
-        border: none;
-        cursor: pointer;
-        width: 20%;
-        border-radius: 14px;
-        display: block;
-        position: middle;
-        font-size: x-large;
-        font-family: monospace;
+}
+
+
+/* big screens */
+
+@media screen and (min-width: 48em) {
+    .header__title {
+        font-size: 2.5rem;
     }
-    
-    #display-box {}
-    /*MEDIA QUERIES*/
-    
-    @media
+    .conspiracy__theory {
+        font-size: 2rem;
+    }
+    .spinner__button {
+        font-size: 2rem;
+        width: 8rem;
+        height: 4rem;
+    }
+}

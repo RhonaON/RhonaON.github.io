@@ -1,7 +1,22 @@
+/*
+
+TODO:
+- [ ] single textbox output
+- [ ] three textbox output
+- [ ] use BEM methodology for css
+- [ ] animate pin wheels
+- [ ] responsive styles on mobile
+
+*/
+
+
 //Each pinwheel image is it's own var for later CSS/JS animation
 var pinwheel0 = document.getElementById("pinwheel0")
 var pinwheel1 = document.getElementById("pinwheel1")
 var pinwheel2 = document.getElementById("pinwheel2")
+
+
+var displayBoxElement = document.getElementById("display-box")
 
 //Function to randomly generate beginning, middle and end of theory
 function getRandomArbitrary(min, max) {
@@ -26,5 +41,13 @@ let end = ["babies", " with live laugh love propaganda", "with the bisexual agen
 
 
 function generateTheory() {
-    console.log(`${beginning[getRandomArbitrary(0, beginning.length)]} ${middle[getRandomArbitrary(0, middle.length)]} ${end[getRandomArbitrary(0, end.length)]}`)
+    var theory = `${beginning[getRandomArbitrary(0, beginning.length)]} ${middle[getRandomArbitrary(0, middle.length)]} ${end[getRandomArbitrary(0, end.length)]}`
+    console.log(theory)
+    return theory
+}
+
+function displayTheory() {
+    var theory = generateTheory()
+    displayBoxElement.textContent = theory
+
 }
